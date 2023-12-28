@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Array-like Object</title>
+</head>
+
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <script>
+    let ul = document.querySelector('ul');
+    let items = ul.querySelectorAll('li');
+    // items is an array-like object
+    console.log(items);
+    console.log(items.length); // 3
+    console.log(items[0]); // <li>Item 1</li> -- Object but access like Array
+    console.log(items[1]); // <li>Item 2</li>
+    console.log(items[2]); // <li>Item 3</li>
+  </script>
+</body>
+
+</html>
